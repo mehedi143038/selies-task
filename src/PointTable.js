@@ -152,7 +152,19 @@ useEffect(()=>{
                 <button onClick={()=>setModalIsOpen(true)}>{row.team1.name}</button> vs <button onClick={()=>setModalIsOpen(true)}>{row.team2.name}</button>
                 <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}>
                     <h2 style={{color: "white", backgroundColor:"blue"}}>Team name</h2>
-                    <h3>This is a modal</h3>
+                    <table style="width:100%">
+                        <tr>
+                            <th>win</th>
+                            <th>loss</th>
+                            <th>draw</th>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>13</td>
+                        </tr>
+                        
+                        </table>
                     <button onClick={()=> setModalIsOpen(false)}>Close</button>
                 </Modal>
               </TableCell>

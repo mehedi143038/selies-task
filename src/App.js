@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import PointTable from './PointTable';
-import Table from './Table';
 function App() {
   const [round, setRound] = useState([]);
 useEffect(()=>{
@@ -13,7 +12,6 @@ useEffect(()=>{
     <div className="App">
       <h3 style={{color: "blue", marginBottom: "20px"}}>{round.name}</h3>
       <PointTable></PointTable>
-      <Table></Table>
     </div>
   );
 }
